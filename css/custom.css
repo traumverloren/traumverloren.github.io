@@ -1,0 +1,28 @@
+body {
+  background: url('../bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbotron {
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+#title {
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 100;
+  font-size: 60px;
+  margin: 10px;
+}
+
+
+.jumbotron p {
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica;
+  font-weight: 200;
+  font-size: 18px;
+}
