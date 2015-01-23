@@ -26,3 +26,11 @@ body {
   font-weight: 200;
   font-size: 18px;
 }
+
+.icons {
+    opacity:1;
+}
+
+.icons:hover{
+    opacity:0.7;
+}
