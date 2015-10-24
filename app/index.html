@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
-  <title>Polymer Starter Kit</title>
+  <title>Stephanie Nemeth. Web Developer.</title>
   <!-- Place favicon.ico in the `app/` directory -->
 
   <!-- Chrome for Android theme color -->
@@ -75,15 +75,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <span>Home</span>
           </a>
 
-          <a data-route="users" href="/users">
+          <a data-route="about" href="/about">
             <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+            <span>About Me</span>
           </a>
 
-          <a data-route="contact" href="/contact">
-            <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
+          <a data-route="blog" href="/blog">
+            <iron-icon icon="book"></iron-icon>
+            <span>Blog</span>
           </a>
+
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -118,61 +119,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <section data-route="home">
               <paper-material elevation="1">
+                <h1 class="paper-font-display1">What I Do.</h1>
+                <p class="paper-font-subhead">Web Developer at Spacebabies since April 2015.  I'm also a snowboarder, burner, and a coaster enthusiast.</p>
+                <p class="paper-font-subhead">Student of Ruby on Rails + HTML + CSS since November 2014.  Check out my <a href="http://www.github.com/traumverloren" target="_blank">github</a> or <a href="http://newcodegirl.blogger.com" target="_blank">blog</a> to see what I'm up to currently.</p>
+                <p class="paper-font-subhead">I<paper-icon-button id="favorite" icon="favorite" style="color: red"></paper-icon-button>Ruby on Rails.  Like <i>really, really</i> love it.</p>
+                <p class="paper-font-subhead">But, I also like exploring new tech like Google Polymer and AngularJS.</p>
+              </paper-material>
+
+              <paper-material elevation="1">
+                <h1 class="paper-font-display1">How I Did It.</h1>
+
                 <p class="paper-font-subhead">After 5 months, I went from code newbie to a software developer.</p>
-                <p class="paper-font-subhead">No dev bootcamp. No tricks. No shortcuts. Just studying and coding everyday and not being afraid to apply to any junior dev internship I could find.</p>
-                <p class="paper-font-subhead">Former pharmaceutical analytical chemist. Loves indian food and freeletics. Snowboarder, Burner, and Coaster Enthusiast.</p>
-              </paper-material>
-
-              <paper-material elevation="1">
-                <p class="paper-font-subhead">You now have:</p>
-                <my-list></my-list>
-
-                <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
-              </paper-material>
-
-
-              <paper-material elevation="1" class="paper-font-body2">
-                <h1 id="license">License</h1>
-                <p>Everything in this repo is BSD style license unless otherwise specified.</p>
-                <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
-                <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-                <ul>
-                <li>Redistributions of source code must retain the above copyright
-                notice, this list of conditions and the following disclaimer.</li>
-                <li>Redistributions in binary form must reproduce the above
-                copyright notice, this list of conditions and the following disclaimer
-                in the documentation and/or other materials provided with the
-                distribution.</li>
-                <li>Neither the name of Google Inc. nor the names of its
-                contributors may be used to endorse or promote products derived from
-                this software without specific prior written permission.</li>
-                </ul>
-                <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
-              </paper-material>
-
-            </section>
-
-            <section data-route="users">
-              <paper-material elevation="1">
-                <h2 class="paper-font-display2">Users</h2>
-                <p>This is the users section</p>
-                <a href="/users/Rob">Rob</a>
+                <p class="paper-font-subhead">No dev bootcamp. No tricks. No shortcuts. Just studying and coding everyday and not being afraid to go for a new career in a new country.</p>
               </paper-material>
             </section>
 
-            <section data-route="user-info">
+            <section data-route="about">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">
-                User:<span>{{params.name}}</span>
-                </h2>
-                <div>This is <span>{{params.name}}</span>'s section</div>
+                <h1 class="paper-font-display1">My Story.</h1>
+                <p class="paper-font-subhead">I started my coding journey in November 2014. I started out teaching myself HTML, CSS, and Ruby on Rails by using online tutorials, google, and stackoverflow. I must have done something right, because, after a 2 months of self-teaching, I started a junior web development internship.  Then, after 5 months of hard work and coding nearly everyday, I accepted a job contract as a Software Developer!</p>
+                <p class="paper-font-subhead">I am learning new stuff everyday and work on interesting projects! It's an exciting time!</p>
               </paper-material>
             </section>
 
-            <section data-route="contact">
+            <section data-route="blog">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Contact</h2>
-                <p>This is the contact section</p>
+                <h1 class="paper-font-display1">My Blog.</h1>
+                <p>GET blogger posts here</p>
               </paper-material>
             </section>
 
