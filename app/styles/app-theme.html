@@ -26,7 +26,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --default-primary-color:    #00BCD4;
     --light-primary-color:      #B2EBF2;
     --text-primary-color:       #FFFFFF;
-    --accent-color:             #FFEB3B;
+    --accent-color:             #607D8B;
     --primary-background-color: #B2EBF2;
     --primary-text-color:       #212121;
     --secondary-text-color:     #727272;
@@ -49,7 +49,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    --paper-input-container-color:       rgba(255, 255, 255, 0.64);
    --paper-input-container-focus-color: rgba(255, 255, 255, 1);
    --paper-input-container-input-color: #fff;
-
   }
 
   /* paper-button */
@@ -83,6 +82,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin: 16px auto;
     background: white;
   }
+
+  paper-fab {
+    position: absolute;
+    left: calc(98.66% - 80px);
+    top: 164px;
+}
 
   /* image */
   paper-material img {
@@ -129,6 +134,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     transform-origin: left center;
   }
 
+  paper-toolbar.tall {
+    height: 192px;
+  }
+
   #mainToolbar .middle-container  {
     height: 100%;
     margin-left: 48px;
@@ -172,6 +181,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       font-weight: 400;
     }
 
+    paper-toolbar.tall {
+      height: 192px;
+    }
+
     #drawer .paper-toolbar {
       margin-left: 16px;
     }
@@ -202,6 +215,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     iron-pages {
       padding: 48px 62px;
+    }
+
+    paper-toolbar.tall {
+      height: 192px;
     }
 
   }
