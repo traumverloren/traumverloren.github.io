@@ -49,6 +49,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
    --paper-input-container-color:       rgba(255, 255, 255, 0.64);
    --paper-input-container-focus-color: rgba(255, 255, 255, 1);
    --paper-input-container-input-color: #fff;
+
   }
 
   /* paper-button */
@@ -59,6 +60,16 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   #favorite:hover {
     background: rgba(255, 0, 0, 0.2);
+    transform: rotate(360deg);
+  }
+
+  /* paper-fab */
+  #ruby {
+    transition: all 0.5s ease;
+    border-radius: 50%;
+  }
+
+  #ruby:hover {
     transform: rotate(360deg);
   }
 
@@ -82,12 +93,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin: 16px auto;
     background: white;
   }
-
-  paper-fab {
-    position: absolute;
-    left: calc(98.66% - 80px);
-    top: 164px;
-}
 
   /* image */
   paper-material img {
@@ -134,10 +139,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     transform-origin: left center;
   }
 
-  paper-toolbar.tall {
-    height: 192px;
-  }
-
   #mainToolbar .middle-container  {
     height: 100%;
     margin-left: 48px;
@@ -160,6 +161,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     height: 900px;
   }
 
+  .paper-font-subhead a:link {
+    text-decoration: none;
+  }
+
   /* Breakpoints */
 
   /* Small */
@@ -179,10 +184,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     paper-toolbar.tall .app-name {
       font-size: 24px;
       font-weight: 400;
-    }
-
-    paper-toolbar.tall {
-      height: 192px;
     }
 
     #drawer .paper-toolbar {
@@ -215,10 +216,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     iron-pages {
       padding: 48px 62px;
-    }
-
-    paper-toolbar.tall {
-      height: 192px;
     }
 
   }
