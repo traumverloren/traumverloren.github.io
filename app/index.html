@@ -42,6 +42,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!-- Tile icon for Win8 (144x144) -->
   <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
 
+  <link href='https://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild-->
@@ -104,12 +106,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application name -->
           <div class="middle middle-container center horizontal layout">
-            <div class="app-name">Stephanie Nemeth</div>
+            <div class="app-name" id="title-name">Stephanie Nemeth</div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">Awesome Web Developer.</div>
+            <div class="bottom-title paper-font-subhead">Ruby on Rails Developer.</div>
           </div>
 
         </paper-toolbar>
@@ -143,6 +145,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p class="paper-font-subhead">I started my coding journey in November 2014. I started out teaching myself HTML, CSS, and Ruby on Rails by using online tutorials, google, and stackoverflow. I must have done something right, because, after a 2 months of self-teaching, I started a junior web development internship.  Then, after 5 months of hard work and coding nearly everyday, I accepted a job contract as a Software Developer!</p>
                 <p class="paper-font-subhead">I am learning new stuff everyday and work on interesting projects! It's an exciting time!</p>
               </paper-material>
+
+              <paper-material elevation="1">
+                <h1 class="paper-font-display1">How I Did It.</h1>
+                <p class="paper-font-subhead">Here's all the online tutorials I did and books I read before I got an internship.  Most of these resources are free!</p>
+                <p class="paper-font-subhead">
+                  <my-list></my-list>
+                </p>
+              </paper-material>
+
             </section>
 
             <section data-route="blog">
