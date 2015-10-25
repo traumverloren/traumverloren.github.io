@@ -249,3 +249,11 @@ gulp.task('default', ['clean'], function (cb) {
 
 // Load custom tasks from the `tasks` directory
 try { require('require-dir')('tasks'); } catch (err) {}
+
+// npm install gh-pages --save-dev
+
+var ghpages = require('gh-pages');
+
+gulp.task('deploy', ['default'], function(cb) {
+    ghpages.publish(path.join(process.cwd(), 'dist'), cb);
+});
