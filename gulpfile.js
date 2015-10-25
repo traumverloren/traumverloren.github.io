@@ -255,5 +255,7 @@ try { require('require-dir')('tasks'); } catch (err) {}
 var ghpages = require('gh-pages');
 
 gulp.task('deploy', ['default'], function(cb) {
-    ghpages.publish(path.join(process.cwd(), 'dist'), cb);
+    ghpages.publish(path.join(process.cwd(), 'dist'), {
+      branch: 'master' 
+    }, cb);
 });
