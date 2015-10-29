@@ -67,8 +67,12 @@
     transform: rotate(360deg);
   }
 
-  /* General styles */
+  /* fixes paper menu double clicking in Safari and Chrome! */
+  paper-menu a > *, paper-menu paper-item > *, paper-menu paper-icon-item > * {
+    pointer-events: none;
+  }
 
+  /* General styles */
   #drawerToolbar {
     color: var(--secondary-text-color);
     background-color: var(--drawer-menu-color);
