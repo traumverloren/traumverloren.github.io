@@ -1,19 +1,19 @@
 # Made with <3 with Google Polymer
 
-## Work only in polymer-remix branch!!!
+### Work only in polymer-remix branch!!!
 
 ## Server
 
-'gulp serve'
+`gulp serve`
 
 ## Vulcanize/Build
 
-'gulp' or 'gulp serve:dist'
+`gulp` or `gulp serve:dist`
 
 ## Deploy
 
 Deploy to master branch!
 
-'gulp deploy'
+`gulp deploy`
 
 Does it for us because I added this functionality to the gulpfile.js file!
