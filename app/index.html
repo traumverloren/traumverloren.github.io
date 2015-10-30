@@ -61,7 +61,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
 
-    <paper-drawer-panel id="paperDrawerPanel">
+    <paper-drawer-panel id="paperDrawerPanel" drawer-width="200px">
       <!-- Drawer Scroll Header Panel -->
       <paper-scroll-header-panel drawer fixed>
 
@@ -137,7 +137,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p class="paper-font-subhead">No dev bootcamp. No tricks. No shortcuts. Just studying and coding everyday and not being afraid to go after a new career in a new country.</p>
                 <p class="paper-font-subhead">Check out my <a href="http://www.github.com/traumverloren" target="_blank">github</a> or <a href="http://newcodegirl.blogspot.nl" target="_blank">blog</a> to see what I'm up to!</p>
               </paper-material>
-            </section>
+
+            <paper-material elevation="1">
+              <p class="paper-font-subhead" align="center">Made with <a href="http://www.polymer-project.org" target="_blank"><paper-icon-button id="favorite" icon="polymer" style="color: purple"></a></p>
+            </paper-material>
+          </section>
 
             <section data-route="about">
               <paper-material elevation="1">
