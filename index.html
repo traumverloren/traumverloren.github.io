@@ -148,8 +148,15 @@
         background-color: #16a085;
     }
 
+    .heart-icon {
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+
     .heart-icon:hover {
-      color: #e74c3c;
+        color: #e74c3c;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 </style>
 
