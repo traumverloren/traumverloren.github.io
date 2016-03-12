@@ -1,1 +1,374 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Polymer Starter Kit"><title>Stephanie Nemeth. Web Developer.</title><meta name="theme-color" content="#303F9F"><link rel="manifest" href="manifest.json"><meta name="msapplication-TileColor" content="#3372DF"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="PSK"><link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="apple-mobile-web-app-title" content="Polymer Starter Kit"><link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png"><meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"><link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet" type="text/css"><link rel="stylesheet" href="styles/main.css"><script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script><link rel="import" href="elements/elements.vulcanized.html"></head><body unresolved="" class="fullbleed layout vertical"><span id="browser-sync-binding"></span><template is="dom-bind" id="app"><paper-drawer-panel id="paperDrawerPanel" drawer-width="200px"><paper-scroll-header-panel drawer="" fixed=""><paper-toolbar id="drawerToolbar"><span class="paper-font-title">Menu</span></paper-toolbar><paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect"><a data-route="home" href="/"><iron-icon icon="home"></iron-icon><span>Home</span></a> <a data-route="about" href="/about"><iron-icon icon="info"></iron-icon><span>About Me</span></a> <a data-route="blog" href="/blog"><iron-icon icon="book"></iron-icon><span>Blog</span></a></paper-menu></paper-scroll-header-panel><paper-scroll-header-panel main="" condenses="" keep-condensed-header=""><paper-toolbar id="mainToolbar" class="tall"><paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle=""></paper-icon-button><span class="flex"></span><a href="mailto:traumverloren@gmail.com"><paper-icon-button icon="mail" style="color: white;"></paper-icon-button></a> <a href="http://www.twitter.com/stephaniecodes" target="_blank"><paper-icon-button src="images/twitter-icon.png"></paper-icon-button></a> <a href="http://www.github.com/traumverloren" target="_blank"><paper-icon-button src="images/octocat.png"></paper-icon-button></a><paper-fab id="ruby" mini="" src="/images/ruby-white.png"></paper-fab><div class="middle middle-container center horizontal layout"><div class="app-name" id="title-name">Stephanie Nemeth</div></div><div class="bottom bottom-container center horizontal layout"><div class="bottom-title paper-font-subhead">Ruby on Rails Developer.</div></div></paper-toolbar><div class="content"><iron-pages attr-for-selected="data-route" selected="{{route}}"><section data-route="home"><paper-material elevation="1"><img src="images/steph_main.png"><h1 class="paper-font-display1">Hi there.</h1><p class="paper-font-subhead">I started teaching myself Ruby on Rails + HTML + CSS in November 2014.</p><p class="paper-font-subhead">I'm currently a web developer at <a href="https://www.spacebabies.nl" target="_blank">Space Babies</a>. I'm also a snowboarder, burner, expat, and a coaster enthusiast.</p><p class="paper-font-subhead">I<paper-icon-button id="favorite" icon="favorite" style="color: red"></paper-icon-button>Ruby on Rails. Like <i>really, really</i> love it. But, I also like exploring new tech like Polymer and AngularJS.</p></paper-material><paper-material elevation="1"><h1 class="paper-font-display1">Whoa.</h1><p class="paper-font-subhead">After 5 months, I went from a total code newbie to a software developer. What a crazy time.</p><p class="paper-font-subhead">No dev bootcamp. No tricks. No shortcuts. Just studying and coding everyday and not being afraid to go after a new career in a new country.</p><p class="paper-font-subhead">Check out my <a href="http://www.github.com/traumverloren" target="_blank">github</a> or <a href="http://newcodegirl.blogspot.nl" target="_blank">blog</a> to see what I'm up to!</p></paper-material><paper-material elevation="1"><p class="paper-font-subhead" align="center">Made with <a href="http://www.polymer-project.org" target="_blank"><paper-icon-button id="favorite" icon="polymer" style="color: purple"></paper-icon-button></a></p></paper-material></section><section data-route="about"><paper-material elevation="1"><h1 class="paper-font-display1">My Story.</h1><p class="paper-font-subhead">I started my coding journey in November 2014. I started out teaching myself HTML, CSS, and Ruby on Rails by using online tutorials, google, and stackoverflow. I must have done something right, because, after a 2 months of self-teaching, I started a junior web development internship. Then, after 5 months of hard work and coding nearly everyday, I accepted a job contract as a Software Developer!</p><p class="paper-font-subhead">I am learning new stuff everyday and work on interesting projects! It's an exciting time!</p></paper-material><paper-material elevation="1"><h1 class="paper-font-display1">How I Did It.</h1><p class="paper-font-subhead">Here's all the online tutorials I did and books I read before I got an internship. Most of these resources are free!</p><p class="paper-font-subhead"><my-list></my-list></p></paper-material><paper-material elevation="1"><h1 class="paper-font-display1">Inspired?</h1><p class="paper-font-subhead">Are you starting out on a coding journey or career change?</p><p class="paper-font-subhead">Feel free to reach out with me via <a href="mailto:traumverloren@gmail.com">email</a> or <a href="http://www.twitter.com/stephaniecodes" target="_blank">twitter</a>. I'm super accessible and always excited to share my love for coding with others!</p></paper-material></section><section data-route="blog"><paper-material elevation="1"><h1 class="paper-font-display1">My Blog.</h1><p class="paper-font-subhead">Coming Soon! For now, check out my <a href="http://newcodegirl.blogspot.nl" target="_blank">blogger</a> site.</p></paper-material></section></iron-pages></div></paper-scroll-header-panel></paper-drawer-panel></template><script src="scripts/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stephanie Nemeth: Full-stack Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=VT323|Comfortaa' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+
+  <style>
+    body {
+      line-height: 1.8;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    .fa-rotate-315 {
+        -webkit-transform: rotate(315deg);
+        -moz-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+        -o-transform: rotate(315deg);
+        transform: rotate(315deg);
+    }
+
+    .jumbotron {
+        background-color: #1abc9c; /* turquoise */
+        color: #ffffff;
+        padding: 100px 25px;
+    }
+
+    .bg-grey {
+        background-color: #ecf0f1;
+    }
+
+    .container-fluid {
+        padding: 60px 50px;
+    }
+
+    .jumbotron img {
+      max-height: 500px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+        }
+    }
+
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .thumbnail:hover img{
+        transition: transform 0.4s;
+        transform: scale(.96);
+      }
+
+    h2 {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #303030;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 1.375em;
+        color: #303030;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .icon {
+        height: 64px;
+    }
+
+    .contact-icon {
+        color: #1abc9c; /* turquoise */
+        font-size: 50px;
+    }
+
+    .contact-icon:hover {
+        color: #16a085;
+    }
+
+    .heart-icon {
+        color: #1abc9c; /* turquoise */
+    }
+
+    .row-centered {
+        text-align:center;
+    }
+
+    .col-centered {
+        display: inline-block;
+        float: none;
+        text-align: center;
+        margin: 0 2px 0 2px;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        background-color: #1abc9c;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #1abc9c !important;
+        background-color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: #16a085;
+    }
+
+    .heart-icon {
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+
+    .heart-icon:hover {
+        color: #e74c3c;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+</style>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <a class="navbar-brand" href="#myPage"><i class="fa fa-diamond fa-rotate-315"></i></a> -->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <h1>Stephanie Nemeth</h1>
+      <p>Full-stack Web Developer</p>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2>ABOUT ME</h2>
+          <h4>I create beautiful, artful, and responsive web apps.</h4>
+          <p>I'm a Ruby on Rails developer at <a href="https://www.spacebabies.nl" target="_blank">Space Babies</a> in Amsterdam.  I'm also an expat, burner, and coaster enthusiast.</p>
+          <p>
+            I started teaching myself Ruby on Rails + HTML + CSS in November 2014.
+            After 5 months, I went from a total code newbie to a software developer.
+            <em>No dev bootcamp. No tricks. No shortcuts.</em> Just studying and coding everyday and not being afraid to go after a new career in a new country.
+
+          <p>Check out my <a href="https://www.github.com/traumverloren" target="_blank">github</a> or <a href="https://newcodegirl.blogspot.nl" target="_blank">blog</a> to see what I'm up to!  Right now, I'm working through the <a href="https://www.freecodecamp.com" target="_blank">FreeCodeCamp</a> projects to level up my Javascript skills!</p>
+
+        </div>
+        <div class="col-sm-4">
+          <img class="img-responsive img-rounded" src="images/steph-banana.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Container (Skills Section) -->
+    <div id="skills" class="container-fluid bg-grey text-center">
+      <h2>SKILLS</h2>
+      <h4>Technologies that I love:</h4>
+      <br>
+      <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/ruby-icon.png" />
+          <h4>Ruby</h4>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/rails-icon.png" />
+          <h4>Rails</h4>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/jquery-icon.png" />
+          <h4>jQuery</h4>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/js-icon.png" />
+          <h4>JavaScript</h4>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/css3-icon.png" />
+          <h4>CSS3</h4>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/html5-icon.png" />
+          <h4>HTML5</h4>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/bootstrap-icon.png" />
+          <h4>Bootstrap3</h4>
+        </div>
+
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="icon" src="images/react-icon.png" />
+          <h4>ReactJS</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div id="portfolio" class="container-fluid text-center">
+      <h2>PORTFOLIO</h2>
+
+      <h4>What I work on at Space Babies:</h4>
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="https://www.sign2pay.com" target="_blank">
+              <img class="img-responsive img-rounded" src="images/sign2pay.png" alt="Sign2Pay">
+            </a>
+            <p><strong>Sign2Pay</strong></p>
+            <p>Make secure, mobile payments with your signature.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="https://www.nuwe.co" target="_blank">
+              <img class="img-responsive img-rounded" src="images/nuwe.png" alt="Nuwe">
+            </a>
+            <p><strong>Nuwe</strong></p>
+            <p>Integrating the Internet of Things to improve wellness.</p>
+          </div>
+        </div>
+      </div>
+      <h4>My personal work:</h4>
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="https://traumverloren.github.io/andy-warhol" target="_blank">
+              <img class="img-responsive img-rounded" src="images/andy.png" alt="Andy Warhol">
+            </a>
+            <p><strong>Andy Warhol</strong></p>
+            <p>A tribute page to the artist.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="thumbnail">
+            <a href="https://traumverloren.github.io/random" target="_blank">
+              <img class="img-responsive img-rounded" src="images/bukowski.png" alt="Charles Bukowski">
+            </a>
+            <p><strong>Charles Bukowski - Random Quotes</strong></p>
+            <p>A random quote generator.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey text-center">
+      <h2>Contact</h2>
+      <h4>Want to connect?</h4>
+      <div class="row row-centered">
+        <div class="col-xs-2 col-centered">
+          <a href="https://www.twitter.com/stephaniecodes"><i class="fa fa-twitter contact-icon" title="twitter"></i></a>
+        </div>
+
+        <div class="col-xs-2 col-centered">
+          <a href="https://www.github.com/traumverloren"><i class="fa fa-github contact-icon" title="github"></i></a>
+        </div>
+
+        <div class="col-xs-2 col-centered">
+          <a href="http://newcodegirl.blogspot.nl"><i class="fa fa-rss contact-icon" title="blog"></i></a>
+        </div>
+
+        <div class="col-xs-2 col-centered">
+          <a href="mailto:traumverloren@gmail.com"><i class="fa fa-envelope-o contact-icon" title="email me!"></i></a>
+        </div>
+
+        <div class="col-xs-2 col-centered">
+          <a href="https://www.freecodecamp.com/traumverloren"><i class="fa fa-fire contact-icon" title="freecodecamp"></i></a>
+        </div>
+      </div>
+      <p></p><br>
+      <p></p><br>
+      <p></p><br>
+      <p></p><br>
+      <p></p><br>
+      <p></p><br>
+      <p></p><br>
+      <p></p><br>
+      <p></p><br>
+    </div>
+
+    <!-- Container (Footer Section) -->
+    <footer class="container-fluid text-center">
+    <p>Made with <a href="#myPage" title="wheee!"><i class="heart-icon fa fa-heart-o"></i></a> by Stephanie.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+        });
+      });
+    })
+  </script>
+
+  </body>
+  </html>
