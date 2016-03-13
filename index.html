@@ -17,12 +17,23 @@
       font-family: 'Comfortaa', cursive;
     }
 
-    .fa-rotate-315 {
-        -webkit-transform: rotate(315deg);
-        -moz-transform: rotate(315deg);
-        -ms-transform: rotate(315deg);
-        -o-transform: rotate(315deg);
-        transform: rotate(315deg);
+    .fa-rotate-45 {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .fa-diamond {
+      /*font-size: .6em;*/
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition: transform .8s ease-in-out;
+    }
+
+    .fa-diamond:hover {
+      -webkit-transform: rotate(405deg);
+      transform: rotate(405deg);
     }
 
     .jumbotron {
@@ -98,6 +109,8 @@
 
     .contact-icon:hover {
         color: #16a085;
+        transition: transform 0.2s;
+        transform: scale(1.15);
     }
 
     .heart-icon {
@@ -184,7 +197,7 @@
 
     <div class="jumbotron text-center">
       <h1>Stephanie Nemeth</h1>
-      <p>Full-stack Web Developer</p>
+      <p>Full-stack Web Developer <i class="fa fa-diamond fa-rotate-45"></i></p>
     </div>
 
     <!-- Container (About Section) -->
