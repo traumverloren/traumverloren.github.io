@@ -11,10 +11,10 @@ p {
 
 .main-box {
     left: 50%;
-    top: 30%;
+    top: 40%;
     transform: translate(-50%, -50%);
     width: 70%;
-    height: 50%;
+    height: 60%;
     padding: 10px;
     text-align: center;
     position: absolute;
@@ -24,8 +24,8 @@ p {
     font-family: 'Bungee Hairline', cursive;
   }
 
-  .about-me {
-    margin-top: 10px;
+  .about-me p {
+    margin-bottom: 60px;
   }
 
   .contact-info {
@@ -36,9 +36,9 @@ p {
 
   .contact-info p {
     text-align: center;
+    padding-right: 20px;
   }
 
-  }
 
   .fa-diamond {
     margin: 0px 10px 0px 10px;
