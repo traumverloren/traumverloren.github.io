@@ -13,7 +13,7 @@ body {
 }
 
 .contact-info a {
-  color: DarkTurquoise;
+  color: darkcyan;
 }
 
 .contact-info a:hover {
@@ -22,12 +22,12 @@ body {
 
 .about-me a {
   text-decoration: none;
-  color: DarkTurquoise;
+  color: darkcyan;
 }
 
 .about-me a:hover {
   text-decoration: none;
-  background-color: DarkTurquoise;
+  background-color: darkcyan;
   color: Snow;
 }
 
@@ -38,7 +38,7 @@ section {
 }
 
 section h3 {
-  border-bottom: 2px solid DarkTurquoise;
+  border-bottom: 2px solid darkcyan;
   display: table;
 }
 
@@ -74,7 +74,7 @@ section p {
 
 h1, h2, h3, h4 {
   font-family: 'Bungee Hairline', cursive;
-  color: Turquoise;
+  color: DarkCyan;
 }
 
 @media (max-width:700px) {
