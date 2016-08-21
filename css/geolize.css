@@ -42,38 +42,34 @@ main {
 /* Gotta look good on mobile too */
 @media (max-width: 600px) {
   body {
-    font-size: 1em;
+    font-size: 0.8em;
+  }
+
+  h1, h2, h3, h4 {
+    margin-top: 0;
+  }
+
+  .fa {
+    margin-bottom: 10px;
   }
   main {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
   img {
     width: 60%;
   }
-}
 
-/* Blockquote, code and pre */
-blockquote {
-  background-color: AliceBlue;
-  background-image: url('img/quote-background.jpg');
-  width: 50%;
-  padding: 10px;
-  border: 5px solid red;
-}
+  .main-box {
+    padding: 0px;
+    margin-bottom: 5px;
 
-pre, xmp {
-  background-color: CornflowerBlue;
-  background-image: url('img/code-background.gif');
-  padding: 20px;
-  border: 5px solid black;
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-}
+  }
 
+  .main-container {
+    width: 90%;
+  }
+}
 code {
   background-color: white;
 }
@@ -251,16 +247,16 @@ hr {
 
 /* Custom stuff */
 .main-container {
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    width: 80%;
-    transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 80%;
+  transform: translate(-50%, -50%);
 }
 
 .main-box {
   background-color: CornflowerBlue;
-  background-image: url('img/code-background.gif');
+  background-image: url('../img/code-background.gif');
   padding: 20px;
   border: 5px solid black;
   text-align: center;
@@ -272,8 +268,8 @@ hr {
   transition: transform .8s ease-in-out;
   color: Yellow;
   text-shadow: 2px 2px red;
-
 }
+
 .fa-diamond:hover {
   -webkit-transform: rotate(360);
   transform: rotate(360deg);
