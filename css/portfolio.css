@@ -1,0 +1,50 @@
+body {
+  display: block;
+  max-width: 600px;
+  margin: 0 0 0 300px;
+  padding: 10px;
+  border-left: 1px dotted black;
+
+}
+
+.contact-info {
+  position: absolute;
+  margin: 0 0 0 -300px;
+}
+
+section {
+  display: block;
+  margin: 0 0 2em;
+  padding-left: 10px;
+}
+
+section h3 {
+  border-bottom: 2px solid Turquoise;
+  display: table;
+}
+
+p {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 14px;
+}
+
+.title {
+  color: Coral;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bungee Hairline', cursive;
+  color: Turquoise;
+}
+
+@media (max-width:700px) {
+  body {
+    margin: 0;
+  }
+
+  .contact-info {
+    position:static;
+    margin:0 0 2em;
+  }
+}

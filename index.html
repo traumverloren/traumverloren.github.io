@@ -38,10 +38,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stephanie Nemeth. A Web Developer.</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link id="stylesheet" rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
     <script src="https://use.fontawesome.com/0fcef79f2a.js"></script>
 
@@ -50,25 +50,28 @@
   <body>
     <script src="main.js"></script>
 
-    <div class="main-box">
-      <div class="title">
-        <h1>Stephanie Nemeth</h1>
-        <i class="fa fa-diamond" aria-hidden="true"></i>
-        <h3>Web Developer</h3>
-      </div>
-
-      <div class="contact-info">
-        <div class="about-me">
-          <p>I build <a href="portfolio.html">stuff</a> & host <a href="http://bitchesandbytes.nl">meetups</a> and <a href="http://www.stupidhackathon.wtf">stupid hackathons</a>.</p>
+    <div class="main-container">
+      <div class="main-box">
+        <div class="title">
+          <h1>Stephanie Nemeth</h1>
+          <i class="fa fa-diamond" aria-hidden="true"></i>
+          <h3>Web Developer</h3>
         </div>
-        <p>
-          <a href="https://newcodegirl.blogspot.nl/">blog</a> |
-          <a href="https://www.github.com/traumverloren">github</a> |
-          <a href="https://www.twitter.com/stephaniecodes">twitter</a> |
-          <a href="mailto:traumverloren@gmail.com?subject=oh hai, kthxbye">mail</a>
-        </p>
-      </div>
 
+        <div class="contact-info">
+          <div class="about-me">
+            <p>I build <a href="portfolio.html">stuff</a>. I host <a href="http://bitchesandbytes.nl">meetups</a> and <a href="http://www.stupidhackathon.wtf">stupid hackathons</a>.</p>
+          </div>
+          <p>
+            <a href="https://newcodegirl.blogspot.nl/">blog</a> |
+            <a href="https://www.github.com/traumverloren">github</a> |
+            <a href="https://www.twitter.com/stephaniecodes">twitter</a> |
+            <a href="mailto:traumverloren@gmail.com?subject=oh hai, kthxbye">mail</a>
+          </p>
+        </div>
+      </div>
+      <button id="btn" onclick="swapStyleSheet()">CSS like it's 1996</button>
     </div>
+
   </body>
 </html>
