@@ -10,16 +10,24 @@ body {
   position: absolute;
   margin: 0 0 0 -290px;
   text-align: center;
-
 }
+
+.contact-info a {
+  color: DarkTurquoise;
+}
+
+.contact-info a:hover, a:visited {
+  color: Coral;
+}
+
 .about-me a, a:visited {
   text-decoration: none;
-  color: Turquoise;
+  color: DarkTurquoise;
 }
 
 .about-me a:hover {
   text-decoration: none;
-  background-color: Turquoise;
+  background-color: DarkTurquoise;
   color: Snow;
 }
 
@@ -30,7 +38,7 @@ section {
 }
 
 section h3 {
-  border-bottom: 2px solid Turquoise;
+  border-bottom: 2px solid DarkTurquoise;
   display: table;
 }
 
