@@ -88,11 +88,11 @@ p {
 
 .about-me a {
   text-decoration: none;
+  color: Blue;
 }
 
 .about-me a:visited {
   text-decoration: none;
-  color: Purple;
 }
 
 .about-me a:hover {
