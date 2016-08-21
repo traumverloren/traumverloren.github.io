@@ -4,12 +4,23 @@ body {
   margin: 0 0 0 300px;
   padding: 10px;
   border-left: 1px dotted black;
-
 }
 
 .contact-info {
   position: absolute;
-  margin: 0 0 0 -300px;
+  margin: 0 0 0 -290px;
+  text-align: center;
+
+}
+.about-me a, a:visited {
+  text-decoration: none;
+  color: Turquoise;
+}
+
+.about-me a:hover {
+  text-decoration: none;
+  background-color: Turquoise;
+  color: Snow;
 }
 
 section {
@@ -28,9 +39,29 @@ p {
   font-size: 14px;
 }
 
-.title {
+.title a {
+  text-decoration: none;
   color: Coral;
   font-size: 16px;
+}
+
+.title a:visited {
+  text-decoration: none;
+  color: Coral;
+}
+
+.title a:hover {
+  text-decoration: none;
+  background-color: Coral;
+  color: Snow;
+}
+
+#stupid {
+  padding-bottom: 15px;
+}
+
+section p {
+  margin: 5px;
 }
 
 h1, h2, h3, h4 {
@@ -46,5 +77,7 @@ h1, h2, h3, h4 {
   .contact-info {
     position:static;
     margin:0 0 2em;
+    border-bottom: 1px dotted black;
+    text-align: center;
   }
 }
