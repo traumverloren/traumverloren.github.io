@@ -1,11 +1,12 @@
 /* =========== STUPID MEDIA QUERIES =========== */
 /* Gotta look decent on mobile too */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   body {
     font-size: 1em;
   }
   body .main-box {
-    width: 80%;
+    width: 85%;
+    margin: 0px;
   }
 }
 
@@ -32,7 +33,7 @@ p {
 
 #btn {
   left: 50%;
-  bottom: 10%;
+  bottom: 5%;
   margin-top: 20px;
   position: absolute;
   transform: translate(-50%, -50%);

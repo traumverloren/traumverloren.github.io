@@ -40,9 +40,9 @@ main {
 
 /* =========== STUPID MEDIA QUERIES =========== */
 /* Gotta look good on mobile too */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   body {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   h1, h2, h3, h4 {
@@ -52,22 +52,18 @@ main {
   .fa {
     margin-bottom: 10px;
   }
-  main {
-    width: 95%;
-    margin: 0 auto;
-  }
-  img {
-    width: 60%;
-  }
 
-  .main-box {
+  body .main-box {
     padding: 0px;
-    margin-bottom: 5px;
-
   }
 
   .main-container {
-    width: 90%;
+    width: 95%;
+  }
+
+  #btn {
+    margin-top: 0px;
+    font-size: 0.9em;
   }
 }
 code {
