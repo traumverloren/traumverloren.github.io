@@ -6,7 +6,7 @@ body {
   border-left: 1px dotted black;
 }
 
-.contact-info {
+.header {
   position: absolute;
   margin: 0 0 0 -290px;
   text-align: center;
@@ -16,11 +16,11 @@ body {
   color: DarkTurquoise;
 }
 
-.contact-info a:hover, a:visited {
+.contact-info a:hover {
   color: Coral;
 }
 
-.about-me a, a:visited {
+.about-me a {
   text-decoration: none;
   color: DarkTurquoise;
 }
