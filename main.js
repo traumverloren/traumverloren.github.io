@@ -1,5 +1,5 @@
 var randomize = function () {
-  window.setInterval(randomBackgroundColor, 2000);
+  window.setInterval(randomBackgroundColor, 1000);
 }
 
 var colors = ['Aqua', 'Gold', 'Aquamarine', 'Tomato', 'SpringGreen', 'DeepPink', 'DodgerBlue', 'Chartreuse'];
