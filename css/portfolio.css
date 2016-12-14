@@ -47,6 +47,22 @@ p {
   font-size: 14px;
 }
 
+.speaking-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.speaking-link a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.speaking-link a:hover {
+  text-decoration: none;
+  background-color: black;
+  color: Snow;
+}
+
 .title a {
   text-decoration: none;
   color: Coral;
@@ -64,7 +80,7 @@ p {
   color: Snow;
 }
 
-#stupid {
+#stupid, #ams_rb, #railsconf {
   padding-bottom: 15px;
 }
 
