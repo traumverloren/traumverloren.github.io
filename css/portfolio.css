@@ -3,7 +3,7 @@ body {
   max-width: 600px;
   margin: 0 0 0 300px;
   padding: 10px;
-  border-left: 1px dotted black;
+  border-left: 1px dotted #007a7c;
 }
 
 .header {
@@ -12,22 +12,26 @@ body {
   text-align: center;
 }
 
+.contact-info p {
+  color: #007a7c;
+}
+
 .contact-info a {
-  color: darkcyan;
+  color: #007a7c;
 }
 
 .contact-info a:hover {
-  color: Coral;
+  color: #d43900;
 }
 
 .about-me a {
   text-decoration: none;
-  color: darkcyan;
+  color: #007a7c;
 }
 
 .about-me a:hover {
   text-decoration: none;
-  background-color: darkcyan;
+  background-color: #007a7c;
   color: Snow;
 }
 
@@ -38,7 +42,7 @@ section {
 }
 
 section h3 {
-  border-bottom: 2px solid darkcyan;
+  border-bottom: 2px solid #007a7c;
   display: table;
 }
 
@@ -49,34 +53,34 @@ p {
 
 .speaking-link a {
   text-decoration: none;
-  color: black;
+  color: #007a7c;
 }
 
 .speaking-link a:visited {
   text-decoration: none;
-  color: black;
+  color: #007a7c;
 }
 
 .speaking-link a:hover {
   text-decoration: none;
-  background-color: black;
+  background-color: #007a7c;
   color: Snow;
 }
 
 .title a {
   text-decoration: none;
-  color: Coral;
+  color: #d43900;
   font-size: 16px;
 }
 
 .title a:visited {
   text-decoration: none;
-  color: Coral;
+  color: #d43900;
 }
 
 .title a:hover {
   text-decoration: none;
-  background-color: Coral;
+  background-color: #d43900;
   color: Snow;
 }
 
@@ -90,7 +94,7 @@ section p {
 
 h1, h2, h3, h4 {
   font-family: 'Bungee Hairline', cursive;
-  color: DarkCyan;
+  color: #007a7c;
 }
 
 @media (max-width:700px) {
