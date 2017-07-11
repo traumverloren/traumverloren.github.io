@@ -12,7 +12,7 @@ this.addEventListener('install', function(event) {
         '/main.js',
         '/img/',
         '/img/code-background.gif',
-        '/img/gilbert_tessellation.svg.png',
+        '/img/gilbert_tessellation.svg',
         '/img/main-background.gif'
       ]);
     })
