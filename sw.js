@@ -5,12 +5,10 @@ this.addEventListener('install', function(event) {
         '/',
         '/index.html',
         '/portfolio.html',
-        '/css/',
         '/css/geolize.css',
         '/css/main.css',
         '/css/portfolio.css',
         '/main.js',
-        '/img/',
         '/img/code-background.gif',
         '/img/gilbert_tessellation.svg',
         '/img/main-background.gif'
