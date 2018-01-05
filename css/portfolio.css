@@ -47,7 +47,8 @@ section h3 {
 }
 
 p {
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+    "Lucida Typewriter", monospace;
   font-size: 14px;
 }
 
@@ -84,7 +85,12 @@ p {
   color: Snow;
 }
 
-#spronq, #stupid, #nodeschool, #ams_rb, #railsconf, #codeland {
+#spronq,
+#stupid,
+#werkspot,
+#ams_rb,
+#railsconf,
+#codeland {
   padding-bottom: 15px;
 }
 
@@ -92,20 +98,23 @@ section p {
   margin: 5px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Bungee Hairline', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bungee Hairline", cursive;
   color: #007a7c;
 }
 
-@media (max-width:700px) {
+@media (max-width: 700px) {
   body {
     margin: 0;
     border-left: none;
   }
 
   .header {
-    position:static;
-    margin:0 0 2em;
+    position: static;
+    margin: 0 0 2em;
     border-bottom: 1px dotted black;
     text-align: center;
   }
