@@ -1,115 +1,49 @@
-/* =========== STUPID MEDIA QUERIES =========== */
-/* Gotta look decent on mobile too */
-@media (max-width: 700px) {
-  body {
-    font-size: 1em;
-  }
-  body .main-box {
-    width: 79%;
-    margin: 0px;
-  }
-}
+@import url("https://fonts.googleapis.com/css?family=Miniver|Finger+Paint|Homemade+Apple|Just+Me+Again+Down+Here|Kalam|Montserrat:300|Patrick+Hand|Rock+Salt|Walter+Turncoat");
 
-@media (max-height: 568px) {
-  body .main-box {
-    height: 58%;
-  }
-}
+/* font-family: 'Kalam', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Homemade Apple', cursive;
+font-family: 'Walter Turncoat', cursive;
+font-family: 'Finger Paint', cursive; */
 
 body {
-  background-image: url('../img/gilbert_tessellation.svg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-color: Turquoise;
-  background-attachment: fixed;
-}
-
-p {
-  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter',
-    'Lucida Typewriter', monospace;
-  font-size: 14px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  margin: 0;
+  font-family: "Finger Paint", sans-serif;
+  font-size: 16px;
 }
 
 .main-container {
-  text-align: center;
+  height: 100vh;
+  max-height: 100vh;
+  flex-direction: column;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#btn {
-  left: 50%;
-  bottom: 5%;
-  margin-top: 20px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: white;
-  border: 1px solid black;
-  box-shadow: 3px 3px 0px black;
-  font-family: 'Courier New', Courier, 'Lucida Sans Typewriter',
-    'Lucida Typewriter', monospace;
-  font-size: 14px;
+#cover {
+  height: 60vh;
+  width: auto;
 }
 
-#btn:hover {
-  background: black;
-  border: 1px solid white;
-  box-shadow: 3px 3px 0px white;
-  color: white;
+h1 {
+  color: deeppink;
+  font-family: "Just Me Again Down Here", cursive;
+  font-size: 72px;
+  letter-spacing: 1px;
+  margin: 0;
 }
 
-.main-box {
-  width: 60%;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  height: 38%;
-  padding: 10px;
-  text-align: center;
-  background: white;
-  border: 2px solid black;
-  box-shadow: 15px 15px 0px black;
-  font-family: 'Bungee Hairline', cursive;
-  margin-bottom: 10px;
-}
-
-.title h1 {
-  margin-bottom: 5px;
-}
-
-.title h3 {
-  margin-top: 5px;
-}
-
-.contact-info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.contact-info p {
-  text-align: center;
-  padding-right: 20px;
-}
-
-.about-me a {
+a,
+a:visited {
   text-decoration: none;
-  color: Blue;
+  color: deeppink;
+  cursor: url("/img/nyan_cat.cur") 9 9, pointer;
 }
 
-.about-me a:visited {
-  text-decoration: none;
-}
-
-.about-me a:hover {
-  text-decoration: none;
-  background-color: Black;
-  color: Snow;
-}
-
-.fa-diamond {
-  -webkit-transition: -webkit-transform 0.8s ease-in-out;
-  transition: transform 0.8s ease-in-out;
-}
-.fa-diamond:hover {
-  -webkit-transform: rotate(360);
-  transform: rotate(360deg);
+a:hover {
+  color: turquoise;
 }
