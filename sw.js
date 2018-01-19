@@ -1,11 +1,10 @@
-const expectedCaches = ["v2"];
+const expectedCaches = ["static-v2"];
 
 self.addEventListener("install", event => {
   console.log("V2 installing…");
 
-  // cache a horse SVG into a new cache, static-v2
   event.waitUntil(
-    caches.open("v2").then(cache => {
+    caches.open("static-v2").then(cache => {
       cache.addAll([
         "/",
         "/index.html",
@@ -48,5 +47,3 @@ self.addEventListener("fetch", event => {
     })
   );
 });
-
-this.addEventListener("fetch", function(event) {});
