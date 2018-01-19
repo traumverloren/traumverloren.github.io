@@ -33,7 +33,7 @@ self.addEventListener("activate", event => {
         )
       )
       .then(() => {
-        console.log("static-V4 now ready to handle fetches!");
+        console.log("V5 now ready to handle fetches!");
       })
   );
 });
