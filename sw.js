@@ -6,7 +6,6 @@ self.addEventListener("install", event => {
   event.waitUntil(
     caches.open("static-v4").then(cache => {
       cache.addAll([
-        "/",
         "/index.html",
         "/portfolio.html",
         "/css/main.css",
