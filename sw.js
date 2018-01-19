@@ -1,10 +1,10 @@
-const expectedCaches = ["static-v2"];
+const expectedCaches = ["v3"];
 
 self.addEventListener("install", event => {
-  console.log("V2 installing…");
+  console.log("V3 installing…");
 
   event.waitUntil(
-    caches.open("static-v2").then(cache => {
+    caches.open("v3").then(cache => {
       cache.addAll([
         "/",
         "/index.html",
@@ -39,11 +39,14 @@ self.addEventListener("activate", event => {
   );
 });
 
-self.addEventListener("fetch", event => {
-  console.log("REQUESTING:", event.request.url);
+self.addEventListener("fetch", function(event) {
   event.respondWith(
-    caches.match(event.request).then(response => {
-      response || fetch(event.request);
+    caches.match(event.request).then(function(response) {
+      // Cache hit - return response
+      if (response) {
+        return response;
+      }
+      return fetch(event.request);
     })
   );
 });

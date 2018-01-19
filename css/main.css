@@ -37,7 +37,7 @@ h1 {
 p {
   font-family: "Finger Paint", sans-serif;
   font-size: 0.8em;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 #cover {
