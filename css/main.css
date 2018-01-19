@@ -1,40 +1,48 @@
-@import url("https://fonts.googleapis.com/css?family=Miniver|Finger+Paint|Homemade+Apple|Just+Me+Again+Down+Here|Kalam|Montserrat:300|Patrick+Hand|Rock+Salt|Walter+Turncoat");
+@import url("https://fonts.googleapis.com/css?family=Finger+Paint|Just+Me+Again+Down+Here");
 
-/* font-family: 'Kalam', cursive;
-font-family: 'Patrick Hand', cursive;
-font-family: 'Homemade Apple', cursive;
-font-family: 'Walter Turncoat', cursive;
-font-family: 'Finger Paint', cursive; */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.main-container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  min-height: 100vh;
   background-color: #ffffff;
-  margin: 0;
-  font-family: "Finger Paint", sans-serif;
-  font-size: 16px;
+  min-height: 100vh;
 }
 
 .main-container {
-  height: 100vh;
-  max-height: 100vh;
-  flex-direction: column;
-  width: auto;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-}
-
-#cover {
-  height: 60vh;
-  width: auto;
+  align-items: center;
+  height: 100%;
+  min-height: 100%;
 }
 
 h1 {
   color: deeppink;
   font-family: "Just Me Again Down Here", cursive;
-  font-size: 72px;
   letter-spacing: 1px;
+  font-size: 3em;
   margin: 0;
+}
+
+p {
+  font-family: "Finger Paint", sans-serif;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+#cover {
+  padding-bottom: 20px;
+  max-height: 50%;
 }
 
 a,
@@ -46,4 +54,29 @@ a:visited {
 
 a:hover {
   color: turquoise;
+}
+
+/* Media Queries */
+@media screen and (min-width: 640px) {
+  p {
+    font-size: 1.2em;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1.4em;
+  }
+
+  h1 {
+    font-size: 4.5em;
+  }
+
+  #cover {
+    max-height: 80%;
+  }
 }

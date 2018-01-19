@@ -3,7 +3,7 @@ body {
   max-width: 600px;
   margin: 0 0 0 300px;
   padding: 10px;
-  border-left: 1px dotted #007a7c;
+  border-left: 1px dashed darkorchid;
 }
 
 .header {
@@ -13,25 +13,25 @@ body {
 }
 
 .contact-info p {
-  color: #007a7c;
+  color: darkorchid;
 }
 
 .contact-info a {
-  color: #007a7c;
+  color: darkorchid;
 }
 
 .contact-info a:hover {
-  color: #d43900;
+  color: deeppink;
 }
 
 .about-me a {
   text-decoration: none;
-  color: #007a7c;
+  color: darkorchid;
 }
 
 .about-me a:hover {
   text-decoration: none;
-  background-color: #007a7c;
+  background-color: darkorchid;
   color: Snow;
 }
 
@@ -42,7 +42,7 @@ section {
 }
 
 section h3 {
-  border-bottom: 2px solid #007a7c;
+  border-bottom: 1px solid darkorchid;
   display: table;
 }
 
@@ -54,34 +54,35 @@ p {
 
 .speaking-link a {
   text-decoration: none;
-  color: #007a7c;
+  color: darkorchid;
 }
 
 .speaking-link a:visited {
   text-decoration: none;
-  color: #007a7c;
+  color: darkorchid;
 }
 
 .speaking-link a:hover {
   text-decoration: none;
-  background-color: #007a7c;
+  background-color: darkorchid;
   color: Snow;
 }
 
 .title a {
   text-decoration: none;
-  color: #d43900;
+  color: deeppink;
   font-size: 16px;
 }
 
 .title a:visited {
   text-decoration: none;
-  color: #d43900;
+  background-color: deeppink;
+  color: ;
 }
 
 .title a:hover {
   text-decoration: none;
-  background-color: #d43900;
+  background-color: deeppink;
   color: Snow;
 }
 
@@ -103,7 +104,7 @@ h2,
 h3,
 h4 {
   font-family: "Bungee Hairline", cursive;
-  color: #007a7c;
+  color: darkorchid;
 }
 
 @media (max-width: 700px) {
@@ -115,7 +116,7 @@ h4 {
   .header {
     position: static;
     margin: 0 0 2em;
-    border-bottom: 1px dotted black;
+    border-bottom: 1px dashed darkorchid;
     text-align: center;
   }
 }
