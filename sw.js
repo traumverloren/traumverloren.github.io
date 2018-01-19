@@ -1,10 +1,10 @@
-const expectedCaches = ["v3"];
+const expectedCaches = ["static-v4"];
 
 self.addEventListener("install", event => {
-  console.log("V3 installing…");
+  console.log("static-V4 installing…");
 
   event.waitUntil(
-    caches.open("v3").then(cache => {
+    caches.open("static-v4").then(cache => {
       cache.addAll([
         "/",
         "/index.html",
@@ -20,7 +20,6 @@ self.addEventListener("install", event => {
 
 self.addEventListener("activate", event => {
   // delete any caches that aren't in expectedCaches
-  // which will get rid of static-v1
   event.waitUntil(
     caches
       .keys()
@@ -34,7 +33,7 @@ self.addEventListener("activate", event => {
         )
       )
       .then(() => {
-        console.log("V2 now ready to handle fetches!");
+        console.log("static-V4 now ready to handle fetches!");
       })
   );
 });
@@ -42,11 +41,7 @@ self.addEventListener("activate", event => {
 self.addEventListener("fetch", function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {
-      // Cache hit - return response
-      if (response) {
-        return response;
-      }
-      return fetch(event.request);
+      return response || fetch(event.request);
     })
   );
 });
