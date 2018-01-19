@@ -1,10 +1,10 @@
-const expectedCaches = ["static-v5"];
+const expectedCaches = ["v5"];
 
 self.addEventListener("install", event => {
-  console.log("static-V5 installing…");
+  console.log("V5 installing…");
 
   event.waitUntil(
-    caches.open("static-v5").then(cache => {
+    caches.open("v5").then(cache => {
       cache.addAll([
         "/",
         "/index.html",
