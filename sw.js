@@ -1,16 +1,14 @@
-const expectedCaches = ["v5"];
+const expectedCaches = ["v7"];
 
 self.addEventListener("install", event => {
-  console.log("V5 installing…");
+  console.log("v7 installing…");
 
   event.waitUntil(
-    caches.open("v5").then(cache => {
+    caches.open("v7").then(cache => {
       cache.addAll([
         "/",
         "/index.html",
-        "/portfolio.html",
-        "/css/main.css",
-        "/css/portfolio.css",
+        "/index.css",
         "/img/steph-explosion-transparent.gif",
         "/img/nyan_cat.cur"
       ]);
