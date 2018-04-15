@@ -76,6 +76,7 @@ section {
   grid-gap: 0.3rem;
   grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
+  padding: 0.5rem 0 2rem 0;
 }
 
 .intro-heading {
@@ -378,7 +379,6 @@ section {
 
 @media screen and (min-width: 24rem) {
   section {
-    height: 100%;
     width: 95vw;
     max-width: 95vw;
   }
@@ -404,6 +404,10 @@ section {
 }
 
 @media screen and (min-width: 35rem) {
+  .triangles {
+    padding: 0.5rem 0 0 0;
+  }
+
   .intro-headline,
   #about h2 {
     font-size: 2.1rem;
