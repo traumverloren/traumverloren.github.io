@@ -376,15 +376,15 @@ section {
   grid-row: 9;
 }
 
-@media screen and (min-width: 23rem) {
+@media screen and (min-width: 24rem) {
   section {
     height: 100%;
     width: 95vw;
     max-width: 95vw;
   }
 
-  .triangles h1 {
-    font-size: 2.1rem;
+  .intro-headline {
+    font-size: 1.9rem;
     grid-column: 1 / span 5;
   }
 
@@ -404,6 +404,7 @@ section {
 }
 
 @media screen and (min-width: 35rem) {
+  .intro-headline,
   #about h2 {
     font-size: 2.1rem;
   }

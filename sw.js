@@ -1,10 +1,10 @@
-const expectedCaches = ["v7"];
+const expectedCaches = ["v9"];
 
 self.addEventListener("install", event => {
-  console.log("v7 installing…");
+  console.log("v9 installing…");
 
   event.waitUntil(
-    caches.open("v7").then(cache => {
+    caches.open("v9").then(cache => {
       cache.addAll([
         "/",
         "/index.html",
