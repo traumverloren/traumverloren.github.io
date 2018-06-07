@@ -134,7 +134,6 @@ section {
 }
 
 .contact-icons a {
-  cursor: url("/img/nyan_cat.cur") 9 9, pointer;
   text-decoration: none;
   color: black;
 }
