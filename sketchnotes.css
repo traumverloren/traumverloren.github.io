@@ -58,7 +58,7 @@ nav {
   padding: 0.2rem;
   border: 1px solid black;
   box-shadow: 0.2rem 0.2rem var(--highlight);
-  margin: 0.5rem;
+  margin: 0 0.8rem 0.8rem 0;
 }
 
 .navigation li:hover {
