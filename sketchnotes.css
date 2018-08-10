@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Megrim|IBM+Plex+Mono");
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: cyan;
+  --highlight: deeppink;
+  --darkpurple: darkorchid;
+  --bg: #f7f5f5;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Megrim", cursive;
+  margin: 0;
+}
+
+.headline {
+  display: inline-block;
+  font-size: 2rem;
+  box-shadow: inset 1rem 0rem var(--main-color);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: fixed;
+  left: 0;
+  top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.contact-icons {
+  display: inline-block;
+  position: fixed;
+  left: 0.7rem;
+  bottom: 1rem;
+  margin: 0 auto;
+}
+
+.contact-icons li {
+  margin-bottom: 0.6rem;
+  border: none;
+}
+
+.contact-icons a i {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-icons a:hover > i,
+.contact-icons a:active > i {
+  text-shadow: 4px 0px var(--highlight), -4px 0px var(--main-color);
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin: 2rem 4rem 3rem;
+}
+
+section h2 {
+  font-size: 1rem;
+  font-family: "IBM Plex Mono";
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  list-style: none;
+  grid-gap: 0.5rem;
+  padding: 0;
+}
+
+.one-sketch {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 360px));
+}
+
+li {
+  border: 1px solid #000;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 35rem) {
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
