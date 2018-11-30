@@ -208,6 +208,10 @@ section {
   text-decoration: line-through;
 }
 
+.-emphasized {
+  font-weight: 600;
+}
+
 .where-speak {
   padding: 0;
   margin: 0;
