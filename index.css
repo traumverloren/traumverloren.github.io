@@ -40,7 +40,7 @@ ul {
 }
 
 li {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 p {
@@ -407,6 +407,10 @@ section {
 }
 
 @media screen and (min-width: 35rem) {
+  .li {
+    font-size: 0.9rem;
+  }
+
   .triangles {
     padding: 0.5rem 0 0 0;
   }
